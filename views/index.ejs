@@ -1,0 +1,25 @@
+<% include partials/header %>
+            <div class="row">
+                <div class="col error">
+                    <section>
+                        <p>Session count: <br /><%= counter %> times.</p>
+                    </section>
+                    <section>
+                        <aside>
+                            <form action="/by-two" method='POST'>
+                                <div class="form-group">
+                                    <input class="btn btn-primary btn-sm" type="submit" value='+2'>
+                                </div>
+                            </form>
+                        </aside>
+                        <aside>
+                            <form action="/reset" method='POST'>
+                                <div class="form-group">
+                                    <input class="btn btn-primary btn-sm" type="submit" value='Reset'>
+                                </div>
+                            </form>
+                        </aside>
+                    </section>
+                </div>
+            </div>
+<% include partials/footer %>
